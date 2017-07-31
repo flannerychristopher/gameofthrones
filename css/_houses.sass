@@ -1,0 +1,43 @@
+#houses
+  @extend .wrapper
+  .house
+    height: 100%
+    padding: 1em
+    border-bottom: .3em solid $brand
+    display: flex
+    img
+      height: 3em
+      width: 3em
+    div
+      display: inline-block
+      height: 100%
+      flex-grow: 1
+    div:first-child
+      width: 3em
+    div:nth-child(2)
+      width: calc(95% - 3em)
+      h3
+        display: inline-block
+        margin: 1%
+      p
+        font-size: .8em
+        line-height: 1.5em
+        margin: 1%
+        text-align: justify
+
+@media only screen and (min-width: 900px)
+  #houses
+    display: flex
+    flex-wrap: wrap
+    overflow: hidden
+    justify-content: space-between
+    margin-top: 2em
+    .house
+      width: calc(100% / 3)
+      height: 100%
+      // flex-grow: 1
+      // display: flex
+      border-bottom: none
+      // border-right: .3em solid $brand
+      div
+        // flex-grow: 1

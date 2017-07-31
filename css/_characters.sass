@@ -1,0 +1,44 @@
+@import 'variables'
+
+#characters
+  @extend .wrapper
+  margin-top: 2em
+  h2
+    width: 100%
+  .character
+    padding-bottom: 2em
+    h3
+      font-size: 1.6em
+      height: 15%
+      color: $brand
+    figure
+      display: flex
+      flex-direction: row
+      flex-shrink: 0
+      border-bottom: .3em solid $brand
+      height: 85%
+      a
+        width: 50%
+      figcaption
+        width: 50%
+        height: 100%
+        margin: 0 5%
+        margin-bottom: 1%
+
+.thumbnail
+  width: 100%
+
+@media only screen and (min-width: 900px)
+  #characters
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .character
+      width: calc(92% / 3)
+      h3
+        font-size: 1em
+      figure
+        border-left: .3em solid $brand
+        figcaption
+          font-size: .8em
+          margin-right: 0

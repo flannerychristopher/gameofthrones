@@ -1,0 +1,29 @@
+footer
+  @extend .wrapper
+  background: $brand
+  color: $theme
+  div
+    display: block
+    width: 100%
+    // border-bottom: .3em solid $brand
+    padding: 1.5em
+    h4
+      font-weight: bold
+      color: $heaven
+      margin-bottom: 1em
+  div#flanthedev
+    ul li
+      display: inline-block
+      a img
+        height: 32px
+        width: 32px
+        opacity: .3
+      a:hover img
+        opacity: 1
+
+@media only screen and (min-width: 900px)
+  footer
+    display: flex
+    justify-content: space-between
+    div
+      width: calc(100%/3)
