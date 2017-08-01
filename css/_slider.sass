@@ -3,7 +3,7 @@
 #slider
   @extend .wrapper
   position: relative
-  border-bottom: .3em solid $brand
+  border-bottom: $brandborder
 
 #slidertext1
   display: block
@@ -17,21 +17,23 @@
   bottom: 5%
   left: 5%
   display: none
-  z-index: 20
+  z-index: 25
   h2
     color: $brand
     font-size: 1.2em
     font-weight: 700
+    letter-spacing: 0.2em
     margin-bottom: 1em
     background-color: $accent
     padding: .5em
     border-radius: 15px 0 15px 0
     display: inline-block
+    box-shadow: $heroshadow
   p,
   a
     font-size: .8em
     margin-bottom: 15px
     color: $contrast
-    background-color: $heaven
+    background-color: $hero
     padding: .5em
     border-radius: 5px

@@ -3,7 +3,7 @@ header
   display: flex
   justify-content: space-between
   flex-direction: row
-  border-bottom: .3em solid $brand
+  border-bottom: $brandborder
   align-items: center
 
   div
@@ -13,7 +13,7 @@ header
       color: $brand
       font-family: 'Trirong', cursive
     p
-      font-size: .7em
+      font-size: 0.7em
       color: $contrast
       margin-left: 2em
 
@@ -21,4 +21,7 @@ header
     list-style: none
     text-align: right
     li
-      margin: .5em 1em
+      font-size: 0.7em
+      margin: 1em 1em
+      height: calc(100%/3)
+      vertical-align: bottom
