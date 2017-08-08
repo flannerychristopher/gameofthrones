@@ -6,3 +6,5 @@ Flex Box for layout
 Sass with partials and variables
 jQuery image slider
 lightbox image preview
+
+<br><a href="https://flanthedev.github.io/gameofthrones/">view on GitHub Pages</a>
